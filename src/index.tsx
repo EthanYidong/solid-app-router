@@ -9,7 +9,8 @@ export {
   useNavigate,
   useParams,
   useResolvedPath,
-  useSearchParams
+  useSearchParams,
+  RouteContextObj,
 } from "./routing";
 export { mergeSearchString as _mergeSearchString } from "./utils";
 export type {
