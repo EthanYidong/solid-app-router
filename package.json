@@ -15,7 +15,6 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "prepare": "npm run build",
   "exports": {
     ".": {
       "solid": "./dist/index.jsx",
@@ -30,6 +29,7 @@
   "scripts": {
     "build": "tsc && rollup -c",
     "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "test": "jest && npm run test:types",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage && npm run test:types",
